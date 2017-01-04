@@ -23,12 +23,12 @@
     "typescript-validator"
   ],
   "dependencies": {
-    "validator": ">=5.0.0"
+    "validator": ">=5.0.0",
+    "@types/es6-shim": "^0.31.32"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
     "@types/chai-as-promised": "0.0.29",
-    "@types/es6-shim": "^0.31.32",
     "@types/gulp": "^3.8.32",
     "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.45",
