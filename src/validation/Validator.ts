@@ -69,9 +69,9 @@ export class Validator {
     /**
      * Performs validation of the given object based on decorators or validation schema and reject on error.
      */
-    validateOrReject(objectOrSchemaName: Object|string, objectOrValidationOptions: Object|ValidationOptions, maybeValidatorOptions?: ValidatorOptions): Promise<void> {
+    validateOrReject(objectOrSchemaName: Object|string, objectOrValidationOptions: Object|ValidationOptions, maybeValidatorOptions?: ValidatorOptions): Promise<any> {
         return this.coreValidate(objectOrSchemaName, objectOrValidationOptions, maybeValidatorOptions)
-            .then((validationErorrs: ValidationError[]) => (validationErorrs.length > 0) ? Promise.reject(validationErorrs) : Promise.resolve());
+            .then((validationErrors: ValidationError[]) => (validationErrors.length > 0) ? Promise.reject(validationErrors) : Promise.resolve());
     }
     
     /**

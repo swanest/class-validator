@@ -1,4 +1,3 @@
-import "es6-shim";
 import {Validator} from "../../src/validation/Validator";
 import {ValidationArguments} from "../../src/validation/ValidationArguments";
 import {registerDecorator} from "../../src/register-decorator";
